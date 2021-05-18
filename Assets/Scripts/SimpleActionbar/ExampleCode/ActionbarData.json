@@ -1,0 +1,49 @@
+{
+  "ActionbarData": [
+    {
+      "ActionBarIndex": 0,
+      "Keybind": "Q",
+      "Action": {
+        "$type": "SimpleActionbar.ExampleCode.SpellAction, Assembly-CSharp",
+        "Spell": "Fireball (Rank 1)",
+        "ActionName": "SpellAction",
+        "ActionDescription": null,
+        "ActionCooldown": 5,
+        "OnCooldown": false,
+        "RemainingCooldown": 0.0,
+        "ActionImagePath": "Fireball",
+        "TimeSinceLastExecute": "-Infinity"
+      }
+    },
+    {
+      "ActionBarIndex": 1,
+      "Keybind": "1",
+      "Action": {
+        "$type": "SimpleActionbar.ExampleCode.SpellAction, Assembly-CSharp",
+        "Spell": "Comet",
+        "ActionName": "Comet",
+        "ActionDescription": null,
+        "ActionCooldown": 10,
+        "OnCooldown": false,
+        "RemainingCooldown": 0.0,
+        "ActionImagePath": "Comet",
+        "TimeSinceLastExecute": "-Infinity"
+      }
+    },
+    {
+      "ActionBarIndex": 2,
+      "Keybind": "F",
+      "Action": {
+        "$type": "SimpleActionbar.ExampleCode.EquipAction, Assembly-CSharp",
+        "EquipmentName": "Sword",
+        "ActionName": " EquipAction",
+        "ActionDescription": null,
+        "ActionCooldown": 1,
+        "OnCooldown": false,
+        "RemainingCooldown": 0.0,
+        "ActionImagePath": "Comet",
+        "TimeSinceLastExecute": "-Infinity"
+      }
+    }
+  ]
+}

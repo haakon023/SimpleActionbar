@@ -1,0 +1,65 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="ActionBarCss.uss" />
+    <ui:VisualElement name="Actionbar" class="hotbar">
+        <ui:VisualElement name="ActionButton1" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton2" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton3" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton4" class="hotbarKey" >
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton5" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton6" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton7" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton8" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton9" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ActionButton10" class="hotbarKey">
+            <ui:VisualElement name="HotbarCooldownContainer" class="hotbarCooldownPanel">
+                <ui:Label name="CooldownLabel" text="1" class="hotbarCooldownLabel" />
+            </ui:VisualElement>
+            <ui:Label name="hotbarKeyBindLabel" text="V" class="hotbarKeyBindLabel" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
