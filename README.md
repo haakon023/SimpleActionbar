@@ -19,7 +19,7 @@ To install the Simple Actionbar:
 5. Press `Add`
 6. Optionally, you can add in my sample code, which has the dependencies described above.
  
-[installSimpleActionbar](https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png)
+![installSimpleActionbar](https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png)
 
 
 ## UML Class Diagram
