@@ -46,30 +46,37 @@ An example implementation of the SimpleActionbar could look something like this:
 ### Properties and fields
 
 `public IActionButton<T>[] ActionButtonIndexes { get; protected set; }`
+
 Is an Array of IActionButton, that also has to be implemented, given in the Example code aswell. This takes a `<T>` Which should be the `Action` that you want the button to Execute when it is invoked.
 
 Next fields are protected since no other classes should need to access these, but implementing classes can override this.
 
 `protected bool UseGlobalCooldown;`
+
 Wether to use global cooldown or not, global cooldown is usually invoked after an action has been fired, making the user have to wait a certain amount of time before
 a new action can be invoked.
 
 `protected float GlobalCooldownLength`
+
 The time a user have to wait untill next action can be invoked
 
 `protected float CurrentGlobalCooldown;`
+
 Used as a timer to calculate the remaining time an user needs to wait for global cooldown to be finished
 In theory this can be set as either private or public, so that UI elements can use this to do animation calculations and such
 
 ### Methods
 
 `protected virtual bool EvaluateCanInvokeActionbarButton(IActionButton<T> actionbutton)`
+
 Evaluates if a ActionButton can be invoked, can check if button is disabled, has global cooldown, if the button has an action that can be triggered at all
 
 `public abstract void InvokeActionButton(int actionIndex);` 
+
 Can be invoked from clicking on the UI elements button
 
 `public abstract void InitializeActionbar();`
+
 Used for any initialization of the actionbar, populating the Array `ActionButtonIndexes`, reading from a players JSON file that contains details about said players actionbar, his keybindings, actions that is placed on the actionbar.
 
 ### Events
@@ -78,6 +85,7 @@ All events are using an `EventHandler<Args>` where `args` is a class that has pr
 
 
 `public event EventHandler<UseActionButtonEventArgs> UseActionButtonEvent;`
+
 Can be subscribed by UI elements to know whenever a ActionButton has been invoked
 
 The implementation is given below, should be called whenever a ActionButton is invoked where `T` is the action that is being added
@@ -91,23 +99,26 @@ public virtual void OnAddActionToActionButton(AddActionToActionButtonArgs<T> arg
     }
 }
 ``` 
-The above code is also the way all the other events are implemented, and can be overriden by your own implementation to do more checks if a button can be invoked.
 
+The above code is also the way all the other events are implemented, and can be overriden by your own implementation to do more checks if a button can be invoked.
 The other events are as following
 
 `GlobalCooldownEvent;`
+
 Lets subscribers of this event know that a global cooldown with a `float Duration` of time must pass before any new action can be invoked
 
 `AddActionToActionButtonEvent;`
+
 Lets subscribers of this event know that an action `T` has been added to an `IActionButton<T>`
 
 `RemoveActionFromActionButtonEvent;` 
+
 Lets subscribers know that an action `T` has been removed from an `IActionButton<T>`
 
 `SetActionButtonKeybindLabelEvent;`
+
 Lets subscribers know that an `IActionButton<T>` has changed its keybind
 
 `SetActionButtonDisabledEvent;`
+
 Lets subscribers know that an `IActionButton<T>` has been disabled/undisabled
-
-
