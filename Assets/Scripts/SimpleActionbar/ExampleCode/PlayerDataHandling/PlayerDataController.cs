@@ -66,8 +66,12 @@ namespace SimpleActionbar.ExampleCode
             
             foreach (var action in actions.ActionbarData)
             {
-                controller.AddActionToActionBarButton(action.Action, action.ActionBarIndex);
-                controller.OnSetActionButtonKeyBindLabel(new SetActionButtonKeybindLabelEventArgs
+                controller.OnAddActionToActionButton(new AddActionToActionButtonArgs<IAction>
+                {
+                    Action = action.Action,
+                    Index = action.ActionBarIndex
+                });
+                controller.OnSetActionButtonKeyBindLabel(new SetActionButtonKeybindLabelArgs
                 {
                     NewKeybind = action.KeyBind,
                     ActionIndex = action.ActionBarIndex

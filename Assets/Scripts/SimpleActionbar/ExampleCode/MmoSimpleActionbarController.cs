@@ -24,25 +24,20 @@ namespace SimpleActionbar.ExampleCode
         }
 
 
-        protected override void OnActionButtonPressed(int actionIndex)
+        protected override void OnUseActionButton(UseActionButtonEventArgs args)
         {
-            var action = ActionButtonIndexes[actionIndex];
+            var action = ActionButtonIndexes[args.Index];
             
             //duration 0 to indicate that a button has been pressed but has no cooldown, and as such will not display any cooldown text
             //Only cooldown will be global cooldown if it is set to true
-            OnUseActionButton(new ActionButtonEventArgs{ Index = actionIndex});
-            
+            base.OnUseActionButton(args);
             
             if (EvaluateCanInvokeActionbarButton(action))
             {
                 if (!action.Execute())
                     return;
-                
-                OnUseActionButton(new ActionButtonEventArgs
-                {
-                    Duration = action.ActionToExecute.ActionCooldown,
-                    Index = actionIndex
-                });
+
+                base.OnUseActionButton(args);
                     
                 if (UseGlobalCooldown)
                 {
@@ -69,6 +64,16 @@ namespace SimpleActionbar.ExampleCode
 
             return true;
         }
+
+        public override void OnRemoveActionFromActionButton(RemoveActionFromActionButtonArgs args)
+        {
+            var action = ActionButtonIndexes[args.Index];
+            action.ActionToExecute = null;
+            base.OnRemoveActionFromActionButton(new RemoveActionFromActionButtonArgs()
+            {
+                Index = action.Index,
+            });
+        }
         
         private void Awake()
         {
@@ -84,6 +89,13 @@ namespace SimpleActionbar.ExampleCode
             _mapper = new ActionButtonMapper();
             PlayerInputManager.ActionBarEvent += OnActionButtonPressedMapper;
         }
+        
+        public override void OnAddActionToActionButton(AddActionToActionButtonArgs<IAction> args)
+        {
+            var action = ActionButtonIndexes[args.Index];
+            action.ActionToExecute = args.Action;
+            base.OnAddActionToActionButton(args);
+        }
 
         private void OnActionButtonPressedMapper(string input)
         {
@@ -91,33 +103,17 @@ namespace SimpleActionbar.ExampleCode
             {
                 Debug.LogWarning("Index did not exist in mapping");    
             }
-            OnActionButtonPressed(index);
+            OnUseActionButton(new UseActionButtonEventArgs
+            {
+                Index = index
+            });
         }
 
         public override void InvokeActionButton(int actionButton)
         {
-            OnActionButtonPressed(actionButton);
-        }
-
-        public override void AddActionToActionBarButton(IAction actionToAdd, int actionIndex)
-        {
-            var action = ActionButtonIndexes[actionIndex];
-            action.ActionToExecute = actionToAdd;
-            OnAddActionToActionButton(new AddActionToActionButtonArgs<IAction>
+            OnUseActionButton(new UseActionButtonEventArgs
             {
-                Index = actionIndex,
-                Action = actionToAdd
-            });
-        }
-
-        public override void RemoveActionFromActionbarButton(int actionIndex)
-        {
-            var action = ActionButtonIndexes[actionIndex];
-            
-            action.ActionToExecute = null;
-            OnRemoveActionFromActionButton(new RemoveActionFromActionButtonArgs<IAction>()
-            {
-                Index = actionIndex,
+                Index = actionButton
             });
         }
 

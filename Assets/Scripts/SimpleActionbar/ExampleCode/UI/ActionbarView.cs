@@ -46,7 +46,7 @@ namespace SimpleActionbar.ExampleCode
             StartCoroutine(RefreshActionBar());
         }
 
-        private void OnKeybindChanged(object sender, SetActionButtonKeybindLabelEventArgs e)
+        private void OnKeybindChanged(object sender, SetActionButtonKeybindLabelArgs e)
         {
             if (_actionbarIndexes.TryGetValue(e.ActionIndex, out var element))
             {
@@ -101,7 +101,7 @@ namespace SimpleActionbar.ExampleCode
             }
         }
 
-        private void OnRemoveActionFromActionButton(object sender, RemoveActionFromActionButtonArgs<IAction> args)
+        private void OnRemoveActionFromActionButton(object sender, RemoveActionFromActionButtonArgs args)
         {
             if (_actionbarIndexes.TryGetValue(args.Index, out var visualElement))
             {
@@ -109,7 +109,7 @@ namespace SimpleActionbar.ExampleCode
             }
         }
 
-        public void UseActionButtonEvent(object sender, ActionButtonEventArgs args)
+        public void UseActionButtonEvent(object sender, UseActionButtonEventArgs args)
         {
             if (_actionbarIndexes.TryGetValue(args.Index, out var action))
             {

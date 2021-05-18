@@ -1,6 +1,6 @@
 ﻿namespace SimpleActionbar
 {
-    public class SetActionButtonKeybindLabelEventArgs
+    public class SetActionButtonKeybindLabelArgs
     {
         public string NewKeybind { get; set; }
         public int ActionIndex
