@@ -5,9 +5,21 @@ your own implementation of SimpleActionbarController, and create your own view.
 
 To view how this can be implemented, take a look at the Example code given. *Warning* The example code has dependencies, not having these installed with result in errors. Either install these dependencies, or remove the example code.
 
-- UI Builder
+
 - UI Toolkit
 - Newtonsoft.JSON
+
+## Install
+
+To install the Simple Actionbar:
+1. Open Unity
+2. Open up Unity's Package Manager, under -> Window -> Package Manager
+3. Click the pluss symbol, in top left corner and press "Add from git URL"
+4. Paste in `https://github.com/haakon023/SimpleActionbar` 
+5. Press `Add`
+6. Optionally, you can add in my sample code, which has the dependencies described above.
+7. 
+- UI Builderpaint![installSimpleActionbar](https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png)
 
 
 ## UML Class Diagram
