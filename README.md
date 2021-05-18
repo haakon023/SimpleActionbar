@@ -8,7 +8,7 @@ To view how this can be implemented, take a look at the Example code given. *War
 
 - UI Toolkit
 - Newtonsoft.JSON
-
+- UI Builderpaint!
 ## Install
 
 To install the Simple Actionbar:
@@ -18,8 +18,8 @@ To install the Simple Actionbar:
 4. Paste in `https://github.com/haakon023/SimpleActionbar` 
 5. Press `Add`
 6. Optionally, you can add in my sample code, which has the dependencies described above.
-7. 
-- UI Builderpaint![installSimpleActionbar](https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png)
+ 
+[installSimpleActionbar](https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png)
 
 
 ## UML Class Diagram
