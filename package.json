@@ -1,0 +1,26 @@
+{
+    "name": "com.neoteppe.simpleactionbar",
+    "version": "1.0.0",
+    "displayName": "Simple Action Bar",
+    "description": "A simple action bar system that can be customized to your own needs.",
+    "unity": "2020.1",
+   "keywords": [
+      "Actionbar"
+    ],
+    "author": {
+      "name": "Håkon Finstad",
+      "email": "Haakonfj@gmail.com",
+      "url": "https://github.com/haakon023/SimpleActionbar"
+    },
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/haakon023/SimpleActionbar.git"
+    },
+    "samples": [
+        {
+          "displayName": "OptionsPanel",
+          "description": "Simple options panel.",
+          "path": "Samples~/OptionsPanel"
+        }
+      ]
+  }
