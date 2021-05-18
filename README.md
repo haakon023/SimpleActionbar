@@ -8,7 +8,7 @@ To view how this can be implemented, take a look at the Example code given. *War
 
 - UI Toolkit
 - Newtonsoft.JSON
-- UI Builderpaint!
+- UI Builder
 ## Install
 
 To install the Simple Actionbar:
