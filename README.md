@@ -39,7 +39,7 @@ To let our controller know that an button has been pressed, it is a good practic
 
 An example implementation of the SimpleActionbar could look something like this:
 
-![installSimpleActionbar](https://user-images.githubusercontent.com/20074902/118721130-c51bc200-b82a-11eb-9e57-c11ad457517e.png)
+![DependencyTree](https://user-images.githubusercontent.com/20074902/118708190-b679de80-b81b-11eb-8e43-47533f1efe2e.png)
 
 
 
