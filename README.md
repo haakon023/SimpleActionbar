@@ -31,7 +31,7 @@ As you can see in the above chart, `SimpleActionbarController<T>` is a generic c
 To start using this, you create a new class that implements `SimpleActionbarController<T>`, for example `MyActionBarController : SimpleActionbarController<IAction>`
 where `IAction` is a interface that describes the action that will be executed when a button is pressed.
 
-From the `UML Diagram` section, you can see that `SimpleActionbarController` also is depening on an `IActionButton<T>` which is the container, that is placed on each button index.
+From the `UML Diagram` section, you can see that `SimpleActionbarController` also is depending on an `IActionButton<T>` which is the container, that is placed on each button index.
 That meaning that we also must create a class `MyActionButton : IActionButton<IAction>`
 where `IAction` is the same interface that is being used by our new controller.
 
