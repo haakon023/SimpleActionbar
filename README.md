@@ -14,7 +14,7 @@ To view how this can be implemented, take a look at the Example code given. *War
 To install the Simple Actionbar:
 1. Open Unity
 2. Open up Unity's Package Manager, under -> Window -> Package Manager
-3. Click the pluss symbol, in top left corner and press "Add from git URL"
+3. Click the `+` symbol, in top left corner and press "Add from git URL"
 4. Paste in `https://github.com/haakon023/SimpleActionbar` 
 5. Press `Add`
 6. Optionally, you can add in my sample code, which has the dependencies described above.
