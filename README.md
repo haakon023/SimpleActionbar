@@ -4,7 +4,7 @@ your own implementation of SimpleActionbarController, and create your own view.
 
  ## Preview
  <p align="center">
- <img src="https://user-images.githubusercontent.com/20074902/118862335-e5588900-b8dd-11eb-9e9b-28ba4fac2eef.gif">
+ <img src="https://user-images.githubusercontent.com/20074902/118871433-da0a5b00-b8e7-11eb-8578-b347fc524fdf.gif">
  </p>
 
 # Table of contents
