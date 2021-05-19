@@ -6,6 +6,8 @@ your own implementation of SimpleActionbarController, and create your own view.
  <p align="center">
  <img src="https://user-images.githubusercontent.com/20074902/118871433-da0a5b00-b8e7-11eb-8578-b347fc524fdf.gif">
  </p>
+ 
+ *Art not included*
 
 # Table of contents
 1. [Install](https://github.com/haakon023/SimpleActionbar#Install)
@@ -139,6 +141,7 @@ Lets subscribers know that an `IActionButton<T>` has been disabled/undisabled
 
 ## Sample code
 [Example project 1](https://github.com/haakon023/SimpleActionbar/tree/master/Samples%7E/Example1)
+
 Example project demonstrates the Simple actionbar using unitys new input system, UI system and newtonsoft JSON to load actionbar from a json file.
 **Warning** This example has dependencies to :
 
@@ -147,6 +150,7 @@ Example project demonstrates the Simple actionbar using unitys new input system,
 - Unity inputsystem
 
 [Example project 2](https://github.com/haakon023/SimpleActionbar/tree/master/Samples%7E/ExampleWithStandardUI)
+
 This exampel project demonstrates with the traditional Unity UI, and the new Unity input system
 **Warning** This example has dependencies to :
 - Unity inputsystem
