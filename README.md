@@ -18,12 +18,16 @@ To install the Simple Actionbar:
 4. Paste in `https://github.com/haakon023/SimpleActionbar` 
 5. Press `Add`
 6. Optionally, you can add in my sample code, which has the dependencies described above.
- 
-![installSimpleActionbar](https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png)
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png">
+ </p>
 
 
 ## UML Class Diagram
-![UMLClass](https://user-images.githubusercontent.com/20074902/118694399-53cd1680-b80c-11eb-830d-d44cb4fc8ebb.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20074902/118694399-53cd1680-b80c-11eb-830d-d44cb4fc8ebb.png">
+</p>
+
 
 ## Getting started
 As you can see in the above chart, `SimpleActionbarController<T>` is a generic class that has mutiple properties, events and methods that can be overriden, and some that has to be implemented.
@@ -39,7 +43,9 @@ To let our controller know that an button has been pressed, it is a good practic
 
 An example implementation of the SimpleActionbar could look something like this:
 
-![DependencyDiagram](https://user-images.githubusercontent.com/20074902/118721764-8e927700-b82b-11eb-9881-ac1ab19511b4.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20074902/118721764-8e927700-b82b-11eb-9881-ac1ab19511b4.png">
+</p>
 
 ## Documentation
 
