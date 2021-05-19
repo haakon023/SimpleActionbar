@@ -1,22 +1,18 @@
-
 # SimpleActionbar
 Simple actionbar is a quick and easy way of setting up logic for your actionbar. You have to create 
 your own implementation of SimpleActionbarController, and create your own view.
 
- ### Preview
- This was made using the sample code:
+ ## Preview
  <p align="center">
- <img src="https://user-images.githubusercontent.com/20074902/118861388-b988d380-b8dc-11eb-9325-5d406fb71b88.gif">
+ <img src="https://user-images.githubusercontent.com/20074902/118862335-e5588900-b8dd-11eb-9e9b-28ba4fac2eef.gif">
  </p>
 
+# Table of contents
+1. [Install](https://github.com/haakon023/SimpleActionbar#Install)
+3. [Getting Started](https://github.com/haakon023/SimpleActionbar#Getting-started)
+4. [Documentation](https://github.com/haakon023/SimpleActionbar#Documentation)
+5. [Examples](https://github.com/haakon023/SimpleActionbar#Sample-code)
 
-
-To view how this can be implemented, take a look at the Example code given. *Warning* The example code has dependencies, not having these installed with result in errors. Either install these dependencies, or remove the example code.
-
-
-- UI Toolkit
-- Newtonsoft.JSON
-- UI Builder
 ## Install
 
 To install the Simple Actionbar:
@@ -29,8 +25,6 @@ To install the Simple Actionbar:
  <p align="center">
  <img src="https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png">
  </p>
- 
-
 
 
 ## UML Class Diagram
@@ -138,3 +132,18 @@ Lets subscribers know that an `IActionButton<T>` has changed its keybind
 `SetActionButtonDisabledEvent;`
 
 Lets subscribers know that an `IActionButton<T>` has been disabled/undisabled
+
+
+## Sample code
+[Example project 1](https://github.com/haakon023/SimpleActionbar/tree/master/Samples%7E/Example1)
+Example project demonstrates the Simple actionbar using unitys new input system, UI system and newtonsoft JSON to load actionbar from a json file.
+**Warning** This example has dependencies to :
+
+- UIToolkit
+- Newtonsoft JSON
+- Unity inputsystem
+
+[Example project 2](https://github.com/haakon023/SimpleActionbar/tree/master/Samples%7E/ExampleWithStandardUI)
+This exampel project demonstrates with the traditional Unity UI, and the new Unity input system
+**Warning** This example has dependencies to :
+- Unity inputsystem
