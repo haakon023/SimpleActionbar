@@ -18,9 +18,9 @@
     },
     "samples": [
         {
-          "displayName": "OptionsPanel",
-          "description": "Simple options panel.",
-          "path": "Samples~/OptionsPanel"
+          "displayName": "Simple action bar, using new inputsystem/ui",
+          "description": "Simple action bar, using new inputsystem/ui",
+          "path": "Samples~/Example1"
         }
       ]
   }
