@@ -3,6 +3,14 @@
 Simple actionbar is a quick and easy way of setting up logic for your actionbar. You have to create 
 your own implementation of SimpleActionbarController, and create your own view.
 
+ ### Preview
+ This was made using the sample code:
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/20074902/118861388-b988d380-b8dc-11eb-9325-5d406fb71b88.gif">
+ </p>
+
+
+
 To view how this can be implemented, take a look at the Example code given. *Warning* The example code has dependencies, not having these installed with result in errors. Either install these dependencies, or remove the example code.
 
 
@@ -21,6 +29,8 @@ To install the Simple Actionbar:
  <p align="center">
  <img src="https://user-images.githubusercontent.com/20074902/118721036-a289a900-b82a-11eb-9f8e-19c5146e960a.png">
  </p>
+ 
+
 
 
 ## UML Class Diagram
