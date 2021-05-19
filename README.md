@@ -11,6 +11,9 @@ your own implementation of SimpleActionbarController, and create your own view.
 1. [Install](https://github.com/haakon023/SimpleActionbar#Install)
 3. [Getting Started](https://github.com/haakon023/SimpleActionbar#Getting-started)
 4. [Documentation](https://github.com/haakon023/SimpleActionbar#Documentation)
+    1. [Properties & Fields](https://github.com/haakon023/SimpleActionbar#Properties-and-fields)
+    2. [Methods](https://github.com/haakon023/SimpleActionbar#Methods)
+    3. [Events](https://github.com/haakon023/SimpleActionbar#Events)
 5. [Examples](https://github.com/haakon023/SimpleActionbar#Sample-code)
 
 ## Install
